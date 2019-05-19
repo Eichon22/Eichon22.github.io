@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" title="normal">
+    <title>RPG Gallery</title>
+    <script src="scripts/myfunction.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Main Page</a>
+            <a href="aboutrpg.html">Humor</a>
+            <a href="generator.html">Character Generator</a>
+            <a id="current" href="gallery.html">Gallery</a>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="column">
+                <img src="Gallery3/superbeast.jpg" alt="superbeast" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Gallery3/redhood.jpg" alt="redhood" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Gallery3/leage.jpg" alt="League of Legends" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Gallery3/hum.jpg" alt="humanity" onclick="myFunction(this);">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Gallery3/god.jpg" alt="god" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Gallery3/cocky.jpg" alt="cocky" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Gallery3/clepto.jpg" alt="clepto" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Gallery3/chdev.jpg" alt="chdev" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <!-- The expanding image container -->
+        <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%" alt="expanded image">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>

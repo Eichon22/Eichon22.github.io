@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    /* betűtípus beállítás */
+    background-image: url("../background/Fantasy-Dragon-dragons.jpg");
+    background-repeat: no-repeat;
+    /* háttérképek ismétlődésének beállítása. Az első nem ismétlődik, a második vízszintesen ismétlődik */
+    background-position: 0px 0px, left top;
+    /* háttérkép kezdőpozíciók beállítása */
+    margin-bottom: 100px;
+    /*alsó margó beállítása, hogy látszódjon a vízszintesen ismétlődő háttérkép */
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+article {
+    margin: 0 2em;
+    /* margó beállítás, felül, és alul 0, bal és jobb oldalon kétszeres */
+    border-bottom: 1px dotted black;
+    /* pontozott, szürke, alsó szegély beállítása */
+    padding-bottom: 20px;
+    /* alsó kitöltés beállítása */
+    overflow: hidden;
+    /* azért kell beállítani a hidden értéket, mert különben kilógna belőle a lebegtetett elem */
+}
+
+#current {
+    background-color: #999;
+}
+
+#intro {
+    border-bottom: 1px dotted black;
+    padding-bottom: 20px;
+}
+
+header,
+main,
+footer {
+    width: 70%;
+    /* szélesség */
+    min-width: 400px;
+    /* minimális szélesség */
+    max-width: 1000px;
+    /* maximális szélesség */
+    margin-left: auto;
+    margin-right: auto;
+    /* a margin-left: auto, margin-right: auto; beállítások középre igazítást jelentenek a blokkok esetén */
+    margin-top: 0;
+    /* felső margó */
+    margin-bottom: 0;
+    /* alsó margó */
+    background-color: rgb(202, 200, 179);
+    /* fehér háttérszín */
+    padding: 10px;
+    /* kitöltés */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+
+/* Links inside the navbar */
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.footer a:hover {
+    background-color: red;
+}
